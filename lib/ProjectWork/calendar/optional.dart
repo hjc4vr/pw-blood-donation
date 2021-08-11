@@ -57,8 +57,8 @@ class FormScreenState extends State<FormScreen> {
   Widget _buildPhoneNumber() {
     return UITextField(
       as: inputStyle,
-      validator: (String value) {
-      if (value.isEmpty) {
+      validator: (String ? value) {
+      if (value == null) {
         return 'Phone number is Required';
       }
 
